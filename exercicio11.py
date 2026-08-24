@@ -1,0 +1,6 @@
+num1 = int(input('Informe o primeiro número a ser calculado '))
+num2 = int(input('Informe o segundo número a ser calculado '))
+print(num1, '+', num2,'a soma dos dois números é', num1+num2)
+print(num1, '-', num2, 'a subtração dos dois números é', num1-num2)
+print(num1, '*', num2, 'a multiplicação dos dois números é', num1*num2)
+print(num1, '/', num2,'a divisão dos dois números é', num1/num2)
