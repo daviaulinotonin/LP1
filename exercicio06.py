@@ -1,8 +1,0 @@
-print('Questionário')
-nome = input('Qual o seu nome? ')
-cor = input('Que cor você gosta? ')
-comida = input('Qual sua comida preferida? ')
-print('Apresentação')
-print('Nome:', nome.title()) 
-print('Cor favorita:', cor.title())
-print('Comida preferida:' , comida.title())

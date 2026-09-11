@@ -1,0 +1,5 @@
+lado = int(input('Informe o valor de um lado do quadrado '))
+area = (lado*lado)
+print('A área desse quadrado é', area)
+perimetro = (lado*4)
+print('O perímetro desse quadrado é', perimetro)
