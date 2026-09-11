@@ -1,0 +1,6 @@
+nome = input('Informe o nome do aluno ')
+idade = int(input('Informe a idade do aluno '))
+nota = float(input('Informe a nota final do aluno '))
+print('Nome:' , nome.title())
+print('Idade:' ,idade)
+print('Nota final:',nota)
