@@ -6,11 +6,8 @@ def maximo(num1,num2):
 
     elif num1==num2:
         return(num1 or num2)
-maior = maximo(5,6)
-print(maior)
+print(maximo(5,6))
 
-maior = maximo(2,1)
-print(maior)
+print(maximo(2,1))
 
-maior = maximo(7,7)
-print(maior)
+print(maximo(7,7))
