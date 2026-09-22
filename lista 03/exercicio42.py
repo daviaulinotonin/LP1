@@ -18,7 +18,7 @@ while True:
             opcao = int(input('Selecione qual operação deseja realizar:\n1 - Depósito\n2 - Saque\n3 - Sair\n> '))
         saque = float(input('Informe o valor que deseja sacar:\nR$'))
         elif saldo - saque < 0:
-            print('Não é possível sacar um valor maior que o disponível em conta.\n---------------')
+    print('Não é possível sacar um valor maior que o disponível em conta.\n---------------')
             opcao = int(input('Selecione qual operação deseja realizar:\n1 - Depósito\n2 - Saque\n3 - Sair\n> '))
         else:
             saldo -= saque
