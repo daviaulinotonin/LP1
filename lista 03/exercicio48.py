@@ -1,10 +1,15 @@
 ingressos = 50
 comprados = 0
 sistema = int(input("Deseja iniciar a compra?\n1 - Sim \n2 - Não\n> "))
-while sistema >2:
+# TROCAR PARA WHILE TRUE
+while sistema != 1 and sistema != 2:
     print('Opção inválida.')
     print('-'*15)
     sistema = int(input('Deseja tentar novamente?\n1 - Sim \n2 - Não\n'))
+    if sistema == 1:
+        break
+    if sistema == 2:
+        break
 while sistema == 1:
     print(f'Ingressos disponíveis: {ingressos}')
     qnt = int(input('Quantos ingressos deseja comprar?\n> '))

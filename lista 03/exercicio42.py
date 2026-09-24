@@ -11,20 +11,24 @@ while True:
         saldo += deposito
         print(f'Depósito de R${deposito:.2f} realizado com sucesso.')
         print(f'---------------\nSaldo atual: R${saldo:.2f}\n---------------')
-        opcao = int(input('Selecione qual operação deseja realizar:\n1 - Depósito\n2 - Saque\n3 - Sair\n> '))    
+        opcao = int(input('Selecione qual operação deseja realizar:\n1 - Depósito\n2 - Saque\n3 - Sair\n> '))   
+
     elif opcao == 2:
         if saldo == 0:
             print('Não há saldo disponível para sacar dinheiro.\n---------------')
             opcao = int(input('Selecione qual operação deseja realizar:\n1 - Depósito\n2 - Saque\n3 - Sair\n> '))
+
         saque = float(input('Informe o valor que deseja sacar:\nR$'))
-        elif saldo - saque < 0:
-    print('Não é possível sacar um valor maior que o disponível em conta.\n---------------')
+        if saldo - saque < 0:
+            print('Não é possível sacar um valor maior que o disponível em conta.\n---------------')
             opcao = int(input('Selecione qual operação deseja realizar:\n1 - Depósito\n2 - Saque\n3 - Sair\n> '))
+        
         else:
             saldo -= saque
             print(f'Saque de R${saque:.2f} realizado com sucesso.')
             print(f'---------------\nSaldo atual: R${saldo:.2f}\n---------------')
             opcao = int(input('Selecione qual operação deseja realizar:\n1 - Depósito\n2 - Saque\n3 - Sair\n> '))
+        
     elif opcao == 3:
         print('Operação finalizada.\n---------------')
         break
