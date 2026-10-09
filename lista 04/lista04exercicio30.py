@@ -1,6 +1,5 @@
 def imprime_triangulo(linhas):
-    for n in linhas:
-        print('*'*n)
-
+    for i in range(1, linhas + 1):
+        print('*'*i)
 linhas=int(input('Quantas linhas você quer que seja impresso? '))
-print(imprime_triangulo(linhas))
+imprime_triangulo(linhas)
