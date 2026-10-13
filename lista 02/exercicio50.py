@@ -8,9 +8,9 @@ if pag.lower() == 'cartao' or pag.lower() == 'cartão':
   quant = int(input('Acima de 3 parcelas há um juros de 2% ao mês \nEm quantas parcelas você quer dividir a compra?  '))
   if quant > 3:
     parcela = valor / quant * 1.02
-    print(f'Total: {quant} parcelas de R${parcela}')
+    print(f'Total: {quant} parcelas de R${parcela:.2f}')
     total = parcela * quant
     print(f'Custo final de R${total}')
   else:
     parcela = valor / quant
-    print(f'Total: {quant} parcelas de R${parcela}')
+    print(f'Total: {quant} parcelas de R${parcela:.2f}')
