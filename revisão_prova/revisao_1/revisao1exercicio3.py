@@ -3,6 +3,7 @@ aprovados = 0
 recuperacao = 0
 reprovados = 0
 nota_geral = 0
+
 for aluno in range(alunos):
     nome = input('Digite o nome do aluno: ')
     n1 = float(input('Digite a primeira nota: '))
